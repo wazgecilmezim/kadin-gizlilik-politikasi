@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Kadın: Adet Takvimi, Regl Takibi</title>
+<meta name="description" content="Kadın adet takvimi uygulamasının gizlilik politikası. Uygulama hiçbir veri toplamaz; internet izni bile yoktur.">
+<meta name="theme-color" content="#331A33">
+<!--
+  Kadın — Gizlilik Politikası
+
+  TASARIM NOTU: Bu sayfa Google Play'in gizlilik politikası incelemesinden
+  geçmek zorundadır. Bu yüzden:
+    • Tek başına çalışır (harici dosya, font, script yok) — CDN engellenirse
+      bile açılır.
+    • Açık/koyu tema destekler.
+    • Yazdırılabilir (hekim veya denetim için çıktı alınabilir).
+    • Türkçe ve İngilizce aynı sayfada; Play iki dili de tarar.
+-->
+<style>
+  :root{
+    --bg:#FBF7F8; --surface:#FFFFFF; --ink:#2A1B24; --muted:#6B5563;
+    --line:#EADCE2; --rose:#C0334D; --rose-soft:#FBEEF1; --plum:#331A33;
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1A0F1F; --surface:#251828; --ink:#F4EAF0; --muted:#B79FB0;
+      --line:#3A2A3C; --rose:#F08CA0; --rose-soft:#33202A;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding:0 20px 72px;
+  }
+  .wrap{max-width:760px;margin:0 auto}
+  header{
+    background:linear-gradient(160deg,#4A2340,#331A33 55%,#1A0F1F);
+    color:#FFF6E4; margin:0 -20px 32px; padding:40px 20px 34px;
+  }
+  header .wrap{max-width:760px}
+  .mark{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .mark b{font-size:19px;letter-spacing:.2px}
+  /* Hilal: iki dairenin farkı. SVG yerine CSS — her tarayıcıda aynı çıkar. */
+  .moon{
+    width:30px;height:30px;border-radius:50%;flex:none;position:relative;
+    background:linear-gradient(150deg,#FFF6E4,#F8B49F 55%,#E0556E);
+  }
+  .moon::after{
+    content:"";position:absolute;top:-4px;right:-6px;
+    width:26px;height:26px;border-radius:50%;background:#411F3B;
+  }
+  .moon-star{
+    width:9px;height:9px;flex:none;margin-left:-7px;margin-top:-10px;
+    background:#FFEDD4;
+    clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);
+  }
+  h1{font-size:29px;line-height:1.22;margin:0 0 10px;font-weight:700}
+  .meta{font-size:13.5px;color:#E3C7D4;line-height:1.75}
+  .meta span{display:inline-block;margin-right:14px}
+  h2{
+    font-size:19px;margin:38px 0 12px;padding-top:22px;
+    border-top:1px solid var(--line);font-weight:700;
+  }
+  h2:first-of-type{border-top:0;padding-top:0}
+  h3{font-size:15.5px;margin:22px 0 8px;font-weight:650}
+  p,li{margin:0 0 10px}
+  ul{padding-left:22px;margin:0 0 12px}
+  a{color:var(--rose);text-underline-offset:2px}
+  .callout{
+    background:var(--rose-soft); border:1px solid var(--line);
+    border-left:4px solid var(--rose);
+    border-radius:var(--radius); padding:18px 20px; margin:0 0 22px;
+  }
+  .callout strong{color:var(--rose)}
+  table{
+    width:100%; border-collapse:collapse; margin:0 0 16px; font-size:14.5px;
+    display:block; overflow-x:auto; white-space:nowrap;
+  }
+  @media (min-width:640px){ table{display:table;white-space:normal} }
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  th{background:var(--rose-soft);font-weight:650}
+  code{
+    background:var(--rose-soft); padding:1px 6px; border-radius:5px;
+    font-size:13.5px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  section{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px 24px;margin-bottom:18px}
+  footer{color:var(--muted);font-size:13.5px;margin-top:36px;text-align:center;line-height:1.9}
+  .lang{display:flex;gap:8px;margin-bottom:26px}
+  .lang button{
+    font:inherit;font-size:14px;padding:8px 18px;border-radius:999px;cursor:pointer;
+    border:1px solid var(--line);background:var(--surface);color:var(--ink);
+  }
+  .lang button[aria-pressed="true"]{background:var(--rose);border-color:var(--rose);color:#fff;font-weight:600}
+  [hidden]{display:none !important}
+  @media print{
+    header{background:#fff !important;color:#000 !important;margin:0 0 20px}
+    .meta{color:#333} .lang{display:none} body{background:#fff;padding:0}
+    section{border:0;padding:0;margin:0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="mark">
+      <span class="moon" aria-hidden="true"></span>
+      <span class="moon-star" aria-hidden="true"></span>
+      <b>Kadın</b>
+    </div>
+    <h1 id="t-title">Gizlilik Politikası</h1>
+    <div class="meta">
+      <span id="t-app">Kadın: Adet Takvimi, Regl Takibi</span><br>
+      <span id="t-upd">Son güncelleme: 1 Ekim 2026</span>
+      <span id="t-eff">Yürürlük: 1 Ekim 2026</span><br>
+      <span id="t-ctrl">Veri sorumlusu: Emre Kaftar (kişisel geliştirici)</span><br>
+      <span id="t-mail">İletişim: kaftar.emre@gmail.com</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="lang" role="group" aria-label="Dil / Language">
+    <button id="btn-tr" aria-pressed="true" onclick="setLang('tr')">Türkçe</button>
+    <button id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ============================================================ TÜRKÇE -->
+  <div id="lang-tr">
+
+    <div class="callout">
+      <strong>Bu uygulama sağlık verilerinizi toplamaz, saklamaz veya hiçbir yere göndermez.</strong>
+      Girdiğiniz tüm bilgiler yalnızca kendi telefonunuzda kalır. Uygulamanın izin
+      listesinde <strong>internet izni yoktur</strong> — yani verilerinizin cihazınızdan
+      çıkması teknik olarak mümkün değildir.
+    </div>
+
+    <ul>
+      <li>Hesap açmanız gerekmez. E-posta, telefon numarası veya adınızı istemiyoruz.</li>
+      <li>Reklam göstermiyoruz, reklam kimliği (AD_ID) kullanmıyoruz.</li>
+      <li>Analitik, çökme raporlama veya izleme yazılımı içermiyoruz.</li>
+      <li>Konum, kişiler, SMS, kamera, mikrofon, takvim veya aktivite tanıma izni istemiyoruz.</li>
+      <li>Verileriniz Google yedeklerine veya cihazdan cihaza aktarıma dahil edilmez.</li>
+    </ul>
+
+    <section>
+      <h2>1. Hangi veriler işlenir?</h2>
+      <p>Uygulamaya siz girdiğiniz sürece aşağıdaki veriler <strong>yalnızca cihazınızda</strong> saklanır:</p>
+
+      <h3>Sağlık verileri (özel nitelikli kişisel veri — KVKK m.6)</h3>
+      <ul>
+        <li>Adet döngüsü kayıtları: kanama yoğunluğu, pıhtı, adet ürünü kullanımı</li>
+        <li>Belirtiler: ağrı, şişkinlik, baş ağrısı, ruh hali, uyku, enerji, cinsel istek</li>
+        <li>Vajinal sağlık: akıntı tipi, rengi, kokusu; kaşıntı/yanma gibi bulgular</li>
+        <li>Bazal vücut sıcaklığı ölçümleri</li>
+        <li>Yumurtlama (LH) ve gebelik testi sonuçları</li>
+        <li>Cinsel ilişki kaydı (korunma durumu)</li>
+        <li>Gebelik verileri: son adet tarihi, ultrason ölçümleri, kilo, tansiyon, bebek hareketleri, kasılmalar</li>
+        <li>İlaç ve takviye hatırlatıcıları</li>
+        <li>Serbest notlar</li>
+      </ul>
+
+      <h3>Profil ve tercihler</h3>
+      <ul>
+        <li>Ad (isteğe bağlı, takma ad da olabilir), doğum yılı, boy, kilo</li>
+        <li>Tema, yazı boyutu, hafta başlangıcı gibi görünüm tercihleri</li>
+        <li>Hatırlatıcı saatleri</li>
+      </ul>
+
+      <p>Yukarıdaki verilerin <strong>hiçbiri</strong> sunucuya gönderilmez. Uygulamanın sunucusu yoktur.</p>
+    </section>
+
+    <section>
+      <h2>2. Veriler nerede saklanır?</h2>
+      <ul>
+        <li><strong>Yerel veritabanı:</strong> Android'in uygulamaya özel dizininde
+          (<code>/data/data/com.kadin.app/</code>). Bu dizine yalnızca uygulamanın kendisi
+          erişebilir; diğer uygulamalar erişemez.</li>
+        <li><strong>Tercihler:</strong> Android DataStore ile aynı özel dizinde.</li>
+        <li><strong>Bulut yedeği kapalıdır:</strong> Android yedekleme ve cihazdan cihaza
+          aktarım kurallarında veritabanı, tercihler ve dosyalar açıkça hariç tutulmuştur.
+          Verileriniz Google hesabınıza yedeklenmez.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Verileriniz kimseyle paylaşılır mı?</h2>
+      <p><strong>Hayır.</strong> Verileriniz:</p>
+      <ul>
+        <li>satılmaz, kiralanmaz, takas edilmez,</li>
+        <li>reklam veya pazarlama amacıyla kullanılmaz,</li>
+        <li>üçüncü taraf SDK'larına, veri simsarlarına veya iş ortaklarına aktarılmaz,</li>
+        <li>yasal bir zorunluluk olmadıkça hiçbir kurumla paylaşılmaz.</li>
+      </ul>
+      <p>Uygulama içinde reklam, analitik veya sosyal medya SDK'sı <strong>bulunmamaktadır</strong>.</p>
+    </section>
+
+    <section>
+      <h2>4. Verilerinizin kontrolü sizde</h2>
+      <ul>
+        <li><strong>Doktor raporu (PDF):</strong> Kayıtlarınızdan PDF rapor oluşturup
+          hekiminizle paylaşabilirsiniz. Bu işlem yalnızca sizin başlattığınız bir
+          paylaşımdır ve hangi uygulamayla paylaşacağınıza siz karar verirsiniz.</li>
+        <li><strong>Yedekleme:</strong> JSON biçiminde yedek dosyası oluşturabilirsiniz.
+          Bu dosya şifrelenmemiştir; nereye kaydedeceğiniz ve kiminle paylaşacağınız
+          tamamen sizin sorumluluğunuzdadır.</li>
+        <li><strong>Silme:</strong> Ayarlar → "Tüm sağlık verilerimi sil" ile tüm
+          kayıtlarınızı tek dokunuşla ve geri alınamaz şekilde silebilirsiniz.
+          Uygulamayı kaldırdığınızda da tüm veriler cihazdan silinir.</li>
+        <li><strong>Veri taşınabilirliği:</strong> Verileriniz standart JSON ve CSV
+          biçimlerinde dışa aktarılabilir.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. İzinler ve gerekçeleri</h2>
+      <table>
+        <thead><tr><th>İzin</th><th>Neden gerekli</th><th>Zorunlu mu?</th></tr></thead>
+        <tbody>
+          <tr><td><code>POST_NOTIFICATIONS</code></td><td>Adet, doğurgan pencere ve günlük kayıt hatırlatıcıları</td><td>Hayır, reddedilebilir</td></tr>
+          <tr><td><code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code></td><td>Hatırlatıcıların belirttiğiniz saatte çalışması</td><td>Hayır</td></tr>
+          <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Telefon yeniden başladığında hatırlatıcıların yeniden kurulması</td><td>Hayır</td></tr>
+          <tr><td><code>VIBRATE</code></td><td>Hatırlatıcıda titreşim</td><td>Hayır</td></tr>
+          <tr><td><code>USE_BIOMETRIC</code></td><td>Uygulama kilidi için parmak izi/yüz</td><td>Hayır, isteğe bağlı</td></tr>
+          <tr><td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td><td>Hatırlatıcıların pil tasarrufu nedeniyle gecikmemesi</td><td>Hayır, isteğe bağlı</td></tr>
+        </tbody>
+      </table>
+      <p><strong>İstenmeyen izinler:</strong> Konum (hassas ve arka plan dahil), kişiler,
+        SMS/arama kaydı, kamera, mikrofon, takvim okuma/yazma, aktivite tanıma, vücut
+        sensörleri, reklam kimliği (<code>AD_ID</code>), yüklü uygulama listesi.
+        Uygulama bu izinleri <strong>istemez</strong> ve geçişli bağımlılıklardan
+        sızabilecek izinleri manifest düzeyinde açıkça engeller.</p>
+      <p><strong>Ağ izni (<code>INTERNET</code>) yoktur.</strong> Bu nedenle uygulama
+        hiçbir veri gönderemez.</p>
+    </section>
+
+    <section>
+      <h2>6. Çocukların gizliliği</h2>
+      <p>Uygulama 18 yaş ve üzeri kullanıcılar için tasarlanmıştır ve Google Play
+        "Designed for Families" programına dahil değildir. 18 yaşından küçüklerin
+        verilerini bilerek işlemeyiz.</p>
+    </section>
+
+    <section>
+      <h2>7. KVKK kapsamında haklarınız</h2>
+      <p>6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 11. maddesi uyarınca;
+        kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep
+        etme, düzeltilmesini veya silinmesini isteme, işlemenin sınırlandırılmasını
+        talep etme ve zararın giderilmesini talep etme haklarına sahipsiniz.</p>
+      <p><strong>Önemli:</strong> Verileriniz cihazınızdan çıkmadığı ve tarafımızca
+        erişilemediği için bu haklarınızı doğrudan uygulama içinden kullanırsınız
+        (görüntüleme, dışa aktarma, silme). Verilerinize erişimimiz teknik olarak
+        mümkün değildir; bu nedenle tarafımıza iletilen bir silme talebinde
+        silinecek bir kopya bulunmamaktadır.</p>
+    </section>
+
+    <section>
+      <h2>8. Veri ihlali durumu</h2>
+      <p>Veriler cihazdan çıkmadığı için tarafımızda ihlal edilebilecek bir veri tabanı
+        yoktur. Cihazınızın kaybolması veya çalınması durumunda: uygulama kilidi
+        (PIN/biyometrik) ve "ekran görüntüsünü engelle" ayarlarını kullanmanızı,
+        ayrıca cihazınızın uzaktan silme özelliğini etkinleştirmenizi öneririz.</p>
+    </section>
+
+    <section>
+      <h2>9. Değişiklikler</h2>
+      <p>Bu politika güncellenirse uygulama içinde bildirilir ve bu sayfada yayımlanır.
+        Veri işleme biçimini etkileyen bir değişiklikte yeniden açık rıza istenir.</p>
+    </section>
+
+    <section>
+      <h2>10. Tıbbi sorumluluk reddi</h2>
+      <p>Bu uygulama <strong>doğum kontrol yöntemi değildir</strong> ve gebeliği
+        önlemez. Tıbbi cihaz değildir; hiçbir hastalığı teşhis etmez, tedavi etmez
+        veya önlemez. Uygulamada gösterilen tahminler istatistiksel hesaplardır ve
+        yüzde yüz doğru değildir. Sağlığınızla ilgili kararlar için mutlaka bir
+        hekime danışın.</p>
+    </section>
+
+    <section>
+      <h2>İletişim</h2>
+      <p>Gizlilikle ilgili sorularınız için:
+        <a href="mailto:kaftar.emre@gmail.com">kaftar.emre@gmail.com</a></p>
+      <p>Bu politika, Google Play "Sağlık İçeriği ve Hizmetleri" politikası ve
+        "Kullanıcı Verileri" politikası ile KVKK gerekliliklerine uygun olarak
+        hazırlanmıştır.</p>
+    </section>
+
+  </div>
+
+  <!-- =========================================================== ENGLISH -->
+  <div id="lang-en" hidden>
+
+    <div class="callout">
+      <strong>This app does not collect, store, or transmit your health data.</strong>
+      Everything you enter stays on your own phone. The app's permission list contains
+      <strong>no internet permission</strong> — so it is technically impossible for your
+      data to leave your device.
+    </div>
+
+    <ul>
+      <li>No account required. We never ask for your email, phone number, or name.</li>
+      <li>No ads, and no advertising ID (AD_ID).</li>
+      <li>No analytics, crash reporting, or tracking software.</li>
+      <li>We do not request location, contacts, SMS, camera, microphone, calendar, or activity recognition.</li>
+      <li>Your data is excluded from Google backups and device-to-device transfer.</li>
+    </ul>
+
+    <section>
+      <h2>1. What data is processed?</h2>
+      <p>While you use the app, the following data is stored <strong>only on your device</strong>:</p>
+
+      <h3>Health data (special category personal data)</h3>
+      <ul>
+        <li>Menstrual cycle records: flow intensity, clots, period product use</li>
+        <li>Symptoms: pain, bloating, headache, mood, sleep, energy, libido</li>
+        <li>Vaginal health: discharge type, colour, odour; itching or burning</li>
+        <li>Basal body temperature measurements</li>
+        <li>Ovulation (LH) and pregnancy test results</li>
+        <li>Intercourse records (protection status)</li>
+        <li>Pregnancy data: last menstrual period, ultrasound measurements, weight, blood pressure, fetal movements, contractions</li>
+        <li>Medication and supplement reminders</li>
+        <li>Free-form notes</li>
+      </ul>
+
+      <h3>Profile and preferences</h3>
+      <ul>
+        <li>Name (optional, a nickname is fine), birth year, height, weight</li>
+        <li>Appearance preferences such as theme, font size, week start</li>
+        <li>Reminder times</li>
+      </ul>
+
+      <p><strong>None</strong> of the above is sent to a server. The app has no server.</p>
+    </section>
+
+    <section>
+      <h2>2. Where is data stored?</h2>
+      <ul>
+        <li><strong>Local database:</strong> in Android's app-private directory
+          (<code>/data/data/com.kadin.app/</code>). Only the app itself can access this
+          directory; other apps cannot.</li>
+        <li><strong>Preferences:</strong> in the same private directory via Android DataStore.</li>
+        <li><strong>Cloud backup is disabled:</strong> the database, preferences, and files
+          are explicitly excluded from Android backup and device-to-device transfer rules.
+          Your data is not backed up to your Google account.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Is your data shared with anyone?</h2>
+      <p><strong>No.</strong> Your data is never:</p>
+      <ul>
+        <li>sold, rented, or traded,</li>
+        <li>used for advertising or marketing,</li>
+        <li>transferred to third-party SDKs, data brokers, or business partners,</li>
+        <li>shared with any institution unless legally required.</li>
+      </ul>
+      <p>The app contains <strong>no</strong> advertising, analytics, or social media SDKs.</p>
+    </section>
+
+    <section>
+      <h2>4. You control your data</h2>
+      <ul>
+        <li><strong>Doctor's report (PDF):</strong> you can generate a PDF report from your
+          records and share it with your physician. This is a share you initiate, and you
+          choose which app to send it to.</li>
+        <li><strong>Backup:</strong> you can create a JSON backup file. This file is not
+          encrypted; where you save it and with whom you share it is entirely your
+          responsibility.</li>
+        <li><strong>Deletion:</strong> Settings → "Delete all my health data" erases all
+          records instantly and irreversibly. Uninstalling the app also removes all data
+          from the device.</li>
+        <li><strong>Portability:</strong> your data can be exported in standard JSON and
+          CSV formats.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Permissions and why they are needed</h2>
+      <table>
+        <thead><tr><th>Permission</th><th>Why it is needed</th><th>Required?</th></tr></thead>
+        <tbody>
+          <tr><td><code>POST_NOTIFICATIONS</code></td><td>Period, fertile window, and daily log reminders</td><td>No, can be denied</td></tr>
+          <tr><td><code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code></td><td>Delivering reminders at the exact time you set</td><td>No</td></tr>
+          <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Re-scheduling reminders after the phone restarts</td><td>No</td></tr>
+          <tr><td><code>VIBRATE</code></td><td>Vibration for reminders</td><td>No</td></tr>
+          <tr><td><code>USE_BIOMETRIC</code></td><td>Fingerprint or face unlock for the app lock</td><td>No, optional</td></tr>
+          <tr><td><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code></td><td>Preventing battery saver from delaying reminders</td><td>No, optional</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Permissions we do not request:</strong> location (including precise and
+        background), contacts, SMS/call logs, camera, microphone, calendar read/write,
+        activity recognition, body sensors, advertising ID (<code>AD_ID</code>), and the
+        installed apps list. The app <strong>does not request</strong> these and blocks
+        permissions that could leak in through transitive dependencies at the manifest level.</p>
+      <p><strong>There is no <code>INTERNET</code> permission.</strong> The app therefore
+        cannot send any data.</p>
+    </section>
+
+    <section>
+      <h2>6. Children's privacy</h2>
+      <p>The app is designed for users aged 18 and over and is not part of Google Play's
+        "Designed for Families" programme. We do not knowingly process data of anyone
+        under 18.</p>
+    </section>
+
+    <section>
+      <h2>7. Your rights under GDPR and Turkish KVKK</h2>
+      <p>Under Article 11 of Turkish Law No. 6698 on the Protection of Personal Data
+        (KVKK), and under the GDPR where it applies, you have the right to learn whether
+        your personal data is processed, to request information, to request rectification
+        or erasure, to request restriction of processing, and to claim compensation for
+        damages.</p>
+      <p><strong>Important:</strong> because your data never leaves your device and we
+        cannot access it, you exercise these rights directly inside the app (view, export,
+        delete). Access to your data is technically impossible for us; therefore a deletion
+        request sent to us has no copy to delete.</p>
+    </section>
+
+    <section>
+      <h2>8. Data breaches</h2>
+      <p>Because data never leaves the device, we hold no database that could be breached.
+        If your device is lost or stolen, we recommend enabling the app lock
+        (PIN/biometric) and the "block screenshots" setting, and activating your device's
+        remote wipe feature.</p>
+    </section>
+
+    <section>
+      <h2>9. Changes</h2>
+      <p>If this policy is updated, you will be notified in the app and the new version
+        will be published on this page. If a change affects how data is processed, we will
+        ask for your explicit consent again.</p>
+    </section>
+
+    <section>
+      <h2>10. Medical disclaimer</h2>
+      <p>This app is <strong>not a method of contraception</strong> and does not prevent
+        pregnancy. It is not a medical device; it does not diagnose, treat, or prevent any
+        disease. All predictions shown are statistical estimates and are not guaranteed to
+        be accurate. Always consult a physician for decisions about your health.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For privacy questions:
+        <a href="mailto:kaftar.emre@gmail.com">kaftar.emre@gmail.com</a></p>
+      <p>This policy has been prepared in accordance with Google Play's "Health Content and
+        Services" and "User Data" policies and with the requirements of the Turkish KVKK.</p>
+    </section>
+
+  </div>
+
+  <footer>
+    <div>Kadın — Adet Takvimi, Regl Takibi · <code>com.kadin.app</code></div>
+    <div id="t-foot">Bu sayfa Google Play gizlilik politikası gereksinimlerine uygundur.</div>
+  </footer>
+</div>
+
+<script>
+  // Dil değiştirme: sayfa yeniden yüklenmez, URL'e #en eklenir (paylaşılabilir).
+  function setLang(code){
+    var tr = code === 'tr';
+    document.getElementById('lang-tr').hidden = !tr;
+    document.getElementById('lang-en').hidden = tr;
+    document.getElementById('btn-tr').setAttribute('aria-pressed', tr);
+    document.getElementById('btn-en').setAttribute('aria-pressed', !tr);
+    document.documentElement.lang = code;
+    document.title = tr
+      ? 'Gizlilik Politikası — Kadın: Adet Takvimi, Regl Takibi'
+      : 'Privacy Policy — Kadın: Period & Cycle Tracker';
+    var map = {
+      't-title': tr ? 'Gizlilik Politikası' : 'Privacy Policy',
+      't-app':   tr ? 'Kadın: Adet Takvimi, Regl Takibi'
+                    : 'Kadın: Period & Cycle Tracker',
+      't-upd':   tr ? 'Son güncelleme: 1 Ekim 2026' : 'Last updated: 1 October 2026',
+      't-eff':   tr ? 'Yürürlük: 1 Ekim 2026' : 'Effective: 1 October 2026',
+      't-ctrl':  tr ? 'Veri sorumlusu: Emre Kaftar (kişisel geliştirici)'
+                    : 'Data controller: Emre Kaftar (independent developer)',
+      't-mail':  tr ? 'İletişim: kaftar.emre@gmail.com' : 'Contact: kaftar.emre@gmail.com',
+      't-foot':  tr ? 'Bu sayfa Google Play gizlilik politikası gereksinimlerine uygundur.'
+                    : 'This page meets Google Play privacy policy requirements.'
+    };
+    for (var id in map){ document.getElementById(id).textContent = map[id]; }
+    if (history.replaceState) history.replaceState(null, '', tr ? location.pathname : '#en');
+  }
+  if (location.hash === '#en') setLang('en');
+</script>
+</body>
+</html>
